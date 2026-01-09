@@ -9,7 +9,7 @@ public class VitalSignsGenerator {
      * Typical adult resting range: 60–100 bpm
      */
     public static int generateHeartRate() {
-        return randomIntInRange(60, 100);
+        return randomIntInRange(30, 120);
     }
 
     /**
@@ -17,8 +17,8 @@ public class VitalSignsGenerator {
      * Typical normal range: 90–120 / 60–80 mmHg
      */
     public static BloodPressure generateBloodPressure() {
-        int systolic = randomIntInRange(90, 120);
-        int diastolic = randomIntInRange(60, 80);
+        int systolic = randomIntInRange(80, 160);
+        int diastolic = randomIntInRange(50, 100);
         return new BloodPressure(systolic, diastolic);
     }
 
@@ -35,7 +35,7 @@ public class VitalSignsGenerator {
      * Typical adult resting range: 12–20 breaths/min
      */
     public static int generateRespiratoryRate() {
-        return randomIntInRange(12, 20);
+        return randomIntInRange(7, 30);
     }
 
     /**
@@ -43,7 +43,7 @@ public class VitalSignsGenerator {
      * Normal range: 36.1–37.2 °C
      */
     public static double generateBodyTemperature() {
-        return randomDoubleInRange(36.1, 37.2);
+        return randomDoubleInRange(34, 40);
     }
 
     /* ---------- Helper Methods ---------- */
